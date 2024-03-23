@@ -6,6 +6,7 @@ class Stablessh < Formula
   license "MIT"
 
   depends_on "rust" => :build
+  depends_on "protobuf" => :build
 
   def install
     system "cargo", "install", *std_cargo_args
